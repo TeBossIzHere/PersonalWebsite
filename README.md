@@ -1,6 +1,6 @@
 <main>
   Hello World, my name is <b>Muzaffer Ozen</b>. 
   <p>
-    <font size="-100"><i>This website was created on October 7th, 2020 </i></font>
+    <font size="1"><i>This website was created on October 7th, 2020 </i></font>
   </p>
   </main>
