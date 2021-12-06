@@ -1,107 +1,124 @@
 <!DOCTYPE html>
 <main>
-  <style>
-    *{
-  padding:0;
-  margin:0;
-  overflow-x: hidden;
-}
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			overflow-x: hidden;
+		}
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://raw.githubusercontent.com/TeBossIzHere/aboutme/main/graffiti-waves-on-brick-wall-3840x2160_89475-mm-90.jpg");
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+		html {
+			scroll-behavior: smooth;
+		}
 
-.hero-text {
-  font-family: Candara;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 45px;
-}
+		.hero-image {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://raw.githubusercontent.com/TeBossIzHere/aboutme/main/graffiti-waves-on-brick-wall-3840x2160_89475-mm-90.jpg");
+			width: 100vw;
+			height: 100vh;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
 
-.firstslide {
-  background-color: #414646;
-  height: 10px;
-}
+		.hero-text {
+			font-family: Candara;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 45px;
+		}
 
-.bbb {
-  background-color: #333333;
-  padding: 50px;
-  background-position: center;
-}
+		.firstslide {
+			display: flex;
+			background-color: #414646;
+			height: 50px;
+			color: #C4C4C4;
+			justify-content: space-around;
+			align-items: center;
+		}
 
-.secondslide {
-  padding: 50px;
-  font-size: 25px;
-  background-color: #333333;
-  text-align: center;
-  color: #C4C4C4;
-}
+		.bbb {
+			background-color: #333333;
+			padding: 50px;
+			background-position: center;
+		}
 
-.ccc {
-  background-color: #444444;
-  padding: 50px;
-  background-position: center;
-}
+		.secondslide {
+			padding: 50px;
+			font-size: 25px;
+			background-color: #333333;
+			text-align: center;
+			color: #C4C4C4;
+		}
 
-.thirdslide {
-  padding: 50px;
-  font-size: 25px;
-  background-color: #444444;
-  text-align: center;
-  color: #C4C4C4;
-}
+		.ccc {
+			background-color: #444444;
+			padding: 50px;
+			background-position: center;
+		}
 
-.fifthslide {
-  padding: 50px;
-  font-size: 25px;
-  background-color: #555555;
-  text-align: center;
-  color: #C4C4C4;
-}
+		.thirdslide {
+			padding: 50px;
+			font-size: 25px;
+			background-color: #444444;
+			text-align: center;
+			color: #C4C4C4;
+		}
 
-.ddd {
-  background-color: #555555;
-  padding: 50px;
-  background-position: center;
-}
+		.fifthslide {
+			padding: 50px;
+			font-size: 25px;
+			background-color: #555555;
+			text-align: center;
+			color: #C4C4C4;
+		}
 
-.sixthslide {
-  margins: 5px;
-  padding: 20px;
-  font-size: 25px;
-  background-color: #666666;
-  text-align: center;
-  color: #C4C4C4;
-}
+		.ddd {
+			background-color: #555555;
+			padding: 50px;
+			background-position: center;
+		}
 
-.eee {
-  background-color: #666666;
-  padding: 25px;
-  background-position: center;
-}
-  </style>
-  <div class="hero-image">
-   <div class="hero-text">
-     <h1>I am <i>Muzaffer Ozen.</i></h1>
+		.sixthslide {
+			margins: 5px;
+			padding: 20px;
+			font-size: 25px;
+			background-color: #666666;
+			text-align: center;
+			color: #C4C4C4;
+		}
+
+		.eee {
+			background-color: #666666;
+			padding: 25px;
+			background-position: center;
+		}
+
+    a {
+      text-decoration : none;
+      color : #C4C4C4;
+    }
+	</style>
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1>I am <i>Muzaffer Ozen.</i></h1>
      <p><i>an aspiring Developer</i></p>
    </div>
   </div>
   
   <div class="firstslide">
+    <b><p><a href="#about">About</a></p></b>
+    <b><p><a href="#experience">Experience</a></p></b>
+    <b><p><a href="#projects">Projects</a></p></b>
+    <b><p><a href="#linkedin">Linkedin<a></p></b>
   </div>
   
-  <div class="secondslide">
-    <div class="bbb">
+  <div class="secondslide" id="about">
+    <div id="bbb">
     <h1 style="padding:25px;">About Me</h1>
       <p style="margin-top:30px; word-spacing: 5px;">Hello there stranger! My name is Muzaffer Ozen and this is my humble personal website. Currently, I am persuing CIS bachelors at the University of Houston (YAAWHOOO) and also a SWE bootcamp at General Assembly.</p>
       <p style="margin-top:30px; word-spacing: 5px;">This website serves the purpose of a make-shift sandbox for my coding adventures which I will slowly be adding to the "Projects" section to showcase. As you check out the website, watch your step on the spaghetti code and dont forget to click on the projects to be redirected to view them!<p>
@@ -109,7 +126,7 @@
     </div>
   </div>
   
-  <div class="thirdslide">
+  <div class="thirdslide" id="experience">
     <div class="ccc">
       <h2 style="font-size: 30px;"> Experience </h2>
       <p style="padding: 35px;"><i>Current</i> _________________________</p>
@@ -126,7 +143,7 @@
     </div>
   </div>
   
-  <div class="fifthslide">
+  <div class="fifthslide" id="projects">
     <div class="ddd">
       <h2 style="font-size: 30px; padding: 30px;"> Projects </h2>
       <p style="padding: 15px;"> - <a target="_blank" href="https://www.muzafferozen.com/">AboutMe Website</a> - </p>
@@ -135,11 +152,10 @@
     </div>
   </div>
   
-  <div class="sixthslide">
+  <div class="sixthslide" id="linkedin">
     <div class="eee">
       <h2 style="font-size: 30px; padding: 30px;">Linkedin</h2>
       <p style="text-indent: 30px"><a href="https://www.linkedin.com/in/muzaffer-ozen-b912751ab">https://www.linkedin.com/in/muzaffer-ozen</a></p>
     </div>
   </div>
-
 </main>
