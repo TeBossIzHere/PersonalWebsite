@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<meta name="description" content="HTML/CSS/JS Weather Data Website by Muzaffer Ozen.">
+	<meta name="keywords" content="Weather, weatherdata,weatherproject,weatherdataproject,weatherdatawebsite,weaterhwebsite">
+	<meta name="author" content="Muzaffer B. Ozen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather Data Website</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js" defer>
+
+	</script>
+</head>
+
+<body>
+
+	<div class="headerDiv">
+		<img  id="imgHeader"src="https://i.imgur.com/gSxkIpJ_d.webp?maxwidth=760&fidelity=grand" id="earthImgHeader">
+      <h1 id="titleHeader">WEATHER</h1>
+  </div>
+
+    <section id="container">
+      <div class="menuDiv">
+        <div id="Channel"onclick="wcButton()"><p><b>CHANNEL</b></p></div>
+        <div id="Forecast"onclick="ufButton()"><p><b>FORECASTS</b></p></div>
+        <div id="Safety" onclick="sButton()"><p><b>SAFETY</b></p></div>
+        <div id="Types" onclick="towButton()"><p><b>OTHER</b></p></div>
+      </div>
+
+      <div class="contentDiv">
+
+        <div id="boxContainer">
+          <div id="boxOne">
+            <article>
+              <p id="name1" style="font-size: 25px;margin:0;">Houston</p>
+              <p id="temp1" style="font-size: 75px;margin:0;"></p>
+              <p id="desc1" style="margin-bottom:0;margin-top:50px;"></p>
+              <p id="HighLow1" style="font-size: 25px;margin:0;"></p>
+            </article>
+          </div>
+          <div id="boxTwo">
+            <article>
+              <p id="name2"style="font-size: 25px;margin:0;">New York</p>
+              <p id="temp2"style="font-size: 75px;margin:0;"></p>
+              <p id="desc2"style="margin-bottom:0;margin-top:50px;"></p>
+              <p id="HighLow2"style="font-size: 25px;margin:0;"></p>
+            </article>
+          </div>
+          <div id="boxThree">
+            <article>
+              <p id="name3"style="font-size: 25px;margin:0;">California</p>
+              <p id="temp3"style="font-size: 75px;margin:0;"></p>
+              <p id="desc3"style="margin-bottom:0;margin-top:50px;"></p>
+              <p id="HighLow3"style="font-size: 25px;margin:0;"></p>
+            </article>
+          </div>
+          <div id="boxFour">
+            <article>
+              <p id="name4"style="font-size: 25px;margin:0;">London</p>
+              <p id="temp4"style="font-size: 75px;margin:0;"></p>
+              <p id="desc4"style="margin-bottom:0;margin-top:50px;"></p>
+              <p id="HighLow4"style="font-size: 25px;margin:0;"></p>
+            </article>
+          </div>
+          <div id="boxFive">
+            <article>
+              <p id="name5"style="font-size: 25px;margin:0;">Tokyo</p>
+              <p id="temp5"style="font-size: 75px;margin:0;"></p>
+              <p id="desc5"style="margin-bottom:0;margin-top:50px;"></p>
+              <p id="HighLow5"style="font-size: 25px;margin:0;"></p>
+            </article>
+          </div>
+          <div id="boxSix">
+            <article>
+              <p id="name6"style="font-size: 25px;margin:0;">Moscow</p>
+              <p id="temp6"style="font-size: 75px;margin:0;"></p>
+              <p id="desc6"style="margin-bottom:0;margin-top:50px;"></p>
+              <p id="HighLow6"style="font-size: 25px;margin:0;"></p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="footerDiv">
+  		<img src="https://i.imgur.com/gSxkIpJ_d.webp?maxwidth=760&fidelity=grand" id="earthImgFooter">
+      <img src="https://i.imgur.com/0hmNIqq_d.webp?maxwidth=760&fidelity=grand" id="linkedinImg" onclick="linkedinButton()">
+
+      <h1 id="footerName">WEATHER</h1>
+        <p id="copyrightFooter">@2022 WeatherApp, M.O. All Rights Reserved.</p>
+    </div>
+  </body>
+  
+</html>
