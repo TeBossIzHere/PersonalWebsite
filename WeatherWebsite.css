@@ -31,8 +31,18 @@ body {
   margin:0;
   height:12vh;
   color:#caf0f8;
-  align-items: center;
   justify-content:center;
+  align-items:center;
+}
+
+#switchUnitButton {
+  padding:10px;
+  margin-left:35px;
+  border-radius:30%;
+  background-color:#468faf;
+  color:#caf0f8;
+  opacity: 70%;
+  border:none;
 }
 
 #imgHeader {
