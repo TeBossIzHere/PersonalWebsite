@@ -1,5 +1,5 @@
 function linkedinButton() {
-   window.open("https://www.linkedin.com/in/muzaffer-ozen/", "_blank").focus();
+  window.open("https://www.linkedin.com/in/muzaffer-ozen/", "_blank").focus();
 }
 
 function towButton() {
@@ -17,6 +17,22 @@ function ufButton() {
 function sButton() {
   window.open("https://www.weather.gov/lmk/weathersafetyrules", "_blank").focus();
 }
+
+if (localStorage.getItem("unit") === null) {localStorage.setItem("unit", "Imperial");}
+document.getElementById("switchUnitButton").innerHTML = localStorage.getItem("unit");
+function switchUnitFunction() {
+  let button = document.getElementById("switchUnitButton");
+  if (localStorage.getItem("unit") === "Imperial") {
+    button.innerHTML = "Metric";
+    localStorage.setItem("unit", "Metric");
+    document.location.reload(true);
+  } else {
+    button.innerHTML = "Imperial";
+    localStorage.setItem("unit", "Imperial");
+    document.location.reload(true);
+  }
+}
+
 
 //Make it so if its night time the linear gradient for background is darker, and lighter for day time.
 function descriptionWeather(backgroundName, value) {
@@ -37,8 +53,9 @@ function updateInfo() {
   let tempTest1 = document.getElementById("temp1");
   let descriton1 = document.getElementById("desc1");
   let hAndL1 = document.getElementById("HighLow1");
+  let buttonUnit = document.getElementById("switchUnitButton").innerHTML;
 
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + name1 + "&units=imperial&appid=3a501e6885616ae5a4ffdefeb17a61af")
+  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + name1 + "&units=" + buttonUnit + "&appid=3a501e6885616ae5a4ffdefeb17a61af")
   .then(response => response.json())
   .then(data => {
     var tempValue = data['main']['temp'];
