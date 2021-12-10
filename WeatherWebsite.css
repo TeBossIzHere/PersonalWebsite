@@ -301,6 +301,7 @@ body {
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
+    max-width:150px;
   }
   .contentDiv {
     margin-left: 0;
