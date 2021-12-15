@@ -27,7 +27,7 @@ function closeSettings() {
 if (localStorage.getItem("unit") === null) { localStorage.setItem("unit", "Unit: Imperial"); }
 document.getElementById("switchUnitButton").innerHTML = localStorage.getItem("unit");
 let buttonUnit = document.getElementById("switchUnitButton").innerHTML;
-if (buttonUnit === "Unit: Imperial") { buttonUnit = "Imperial" } else { buttonUnit = "Metric" };
+if (buttonUnit === "Unit: Imperial") { buttonUnit = "Imperial" } else if (buttonUnit === "Unit: Metric") { buttonUnit = "Metric" };
 
 function switchUnitFunction() {
   let button = document.getElementById("switchUnitButton");
