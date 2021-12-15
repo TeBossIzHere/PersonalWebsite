@@ -27,6 +27,7 @@ function closeSettings() {
 if (localStorage.getItem("unit") === null) { localStorage.setItem("unit", "Unit: Imperial"); }
 document.getElementById("switchUnitButton").innerHTML = localStorage.getItem("unit");
 let buttonUnit = document.getElementById("switchUnitButton").innerHTML;
+if (buttonUnit === "Unit: Imperial") { buttonUnit = "Imperial" } else { buttonUnit = "Metric" };
 
 function switchUnitFunction() {
   let button = document.getElementById("switchUnitButton");
@@ -90,7 +91,6 @@ function descriptionWeather(backgroundName, value) {
   }
 }
 
-if (buttonUnit === "Unit: Imperial") { buttonUnit = "Imperial" } else { buttonUnit = "Metric" };
 async function createSite() {
   for (let i = 0; i < boxCount; i++) {
     await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + boxNames[i] + "&units=" + buttonUnit + "&appid=3a501e6885616ae5a4ffdefeb17a61af")
