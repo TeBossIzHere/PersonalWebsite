@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<!--
+  TO DO LIST:
+    1. FIX MEDIA QUERIES FOR THE SIZE OF SCREENS
+    2. ADD FEATURE TO ADD NEW CITIES
+ -->
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,19 +17,16 @@
 	<title>Weather Data Website</title>
 
 	<link href="/WeatherWebsite.css" rel="stylesheet" type="text/css" />
-	<script src="./WeatherWebsite.js" defer>
-
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.0.js">
-
-	</script>
+	<script src="./WeatherWebsite.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </head>
 
 <body>
 
 	<div class="headerDiv">
 		<img  id="imgHeader"src="https://i.imgur.com/gSxkIpJ_d.webp?maxwidth=760&fidelity=grand" id="earthImgHeader">
-      <h1 id="titleHeader">WEATHER</h1>
+      <h1 id="titleHeader" onclick="getLocation()">WEATHER</h1>
   </div>
 
   <div id ="Settings">
