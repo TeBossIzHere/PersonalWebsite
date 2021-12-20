@@ -2,6 +2,9 @@ function linkedinButton() {
   window.open("https://www.linkedin.com/in/muzaffer-ozen/", "_blank").focus();
 }
 
+function gitHubButton() {
+  window.open("https://github.com/TeBossIzHere/WeatherWebsite", "_blank").focus();
+}
 function wcButton() {
   window.open("https://weather.com/", "_blank").focus();
 }
