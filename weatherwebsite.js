@@ -62,7 +62,7 @@ createSite();
 // _______________________________________________________________________________
 
 function clearCacheFunction() {
-  let boxNames = ["Houston", "California"];
+  let boxNames = ["Houston", "San Francisco"];
   localStorage.setItem("boxcount", "2");
   localStorage.setItem("boxnames", JSON.stringify(boxNames));
   document.location.reload(true);
