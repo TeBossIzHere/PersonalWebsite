@@ -1,10 +1,3 @@
-// Current Location request
-// localStorage.setItem("currentlocationused", "false");
-if (localStorage.getItem("currentlocationused") === null || localStorage.getItem("currentlocationused") === "false") {
-  addCurrentLocation();
-  localStorage.setItem("currentlocationused", "true");
-}
-// _______________________________________________________________________________
 function linkedinButton() {
   window.open("https://www.linkedin.com/in/muzaffer-ozen/", "_blank").focus();
 }
@@ -71,11 +64,18 @@ createSite();
 
 // _______________________________________________________________________________
 
+// Current Location request
+// localStorage.setItem("currentlocationused", "false");
+// console.log(localStorage.getItem("currentlocationused"));
+if (localStorage.getItem("currentlocationused") === null || localStorage.getItem("currentlocationused") === "false") {
+  addCurrentLocation();
+}
+// _______________________________________________________________________________
+
 function clearCacheFunction() {
   let boxNames = [];
   localStorage.setItem("boxcount", "0");
   localStorage.setItem("boxnames", JSON.stringify(boxNames));
-  localStorage.setItem("currentlocationused", "false");
   document.location.reload(true);
 }
 
@@ -99,6 +99,8 @@ function addCurrentLocation() {
       boxNames[boxCount - 1] = location.city;
       localStorage.setItem("boxcount", boxCount.toString());
       localStorage.setItem("boxnames", JSON.stringify(boxNames));
+      localStorage.setItem("currentlocationused", "true");
+      document.location.reload(true);
     }
   });
 }
