@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Heebo, thin;
+}
+
+ a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: #91c279;
+ }
+
+body {
+  height: 100vh;
+  /* background-color: rgb(50, 50, 140); */
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 595px;
+}
+
+#firstName, #lastName, #title, #projects {
+  display:flex;
+  flex-direction: row;
+}
+
+#declaration {
+  display: flex;
+}
+
+#worldTravelerLink, #workoutPlannerLink, #weatherTrackerLink, #linkedinLink, #emailLink, #gitHubLink {
+  width: auto; 
+  display:flex;
+  align-items:center;
+  color: #91c279;
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+
+#worldTravelerLink:hover, #workoutPlannerLink:hover, #weatherTrackerLink:hover, #linkedinLink:hover, #gitHubLink:hover  {
+  background-color: #3a404a;
+}
+
+#worldTravelerContainer, #workoutPlannerContainer, #weatherTrackerContainer, #contactsContainer, #linkedinContainer, #emailContainer, #gitHubContainer {
+  display:flex;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+  #mainBox {
+    zoom: 0.6;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+  #mainBox {
+    zoom: 1;
+  }
+}
