@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<meta name="description" content="HTML/CSS/JS Weather Data Website by Muzaffer Ozen.">
+	<meta name="keywords" content="Weather, weatherdata,weatherproject,weatherdataproject,weatherdatawebsite,weaterhwebsite">
+	<meta name="author" content="Muzaffer B. Ozen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather Data Website</title>
+
+	<link href="/WeatherWebsite.css" rel="stylesheet" type="text/css" />
+	<script src="./WeatherWebsite.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+
+<body>
+
+	<div class="headerDiv">
+		<img  id="imgHeader"src="https://i.imgur.com/gSxkIpJ_d.webp?maxwidth=760&fidelity=grand" id="earthImgHeader">
+      <h1 id="titleHeader" onclick="getLocation()">WEATHER</h1>
+  </div>
+
+  <div id ="Settings">
+    <div id="settingsHeader">
+      <div id="settingsTitle" style="margin-left:10px;">Settings</div>
+      <button id="close-button" onclick="closeSettings()">&times;</button>
+    </div>
+    <div id="settingsContent">
+      <div id="switchUnitButton" onclick="switchUnitFunction()"></div>
+      <div style="display:flex;height:50px;">
+        <input id="newCityInput" placeholder='City or Country Name' style="color:black;"></input>
+        <button id="addCityButton" onclick="addCityFunction()">Add Place</button>
+      </div>
+      <button id="currentLocation" onclick="addCurrentLocation()">Add Current Location</button>
+      <button id="clearCache" onclick="clearCacheFunction()">Clear All</button>
+    </div>
+  </div>
+
+  <section id="container">
+      <div class="menuDiv">
+        <div id="Channel"onclick="wcButton()"><p><b>CHANNEL</b></p></div>
+        <div id="Forecast"onclick="ufButton()"><p><b>FORECASTS</b></p></div>
+        <div id="Safety" onclick="sButton()"><p><b>SAFETY</b></p></div>
+        <div id="settingsMenu" onclick="openSettings()"><p><b>SETTINGS</b></p></div>
+      </div>
+
+      <div class="contentDiv">
+        <div id="boxContainer"></div>
+      </div>
+    </section>
+    
+    <div class="footerDiv">
+  		<img src="https://i.imgur.com/gSxkIpJ_d.webp?maxwidth=760&fidelity=grand" id="earthImgFooter">
+      <img src="https://i.imgur.com/0hmNIqq_d.webp?maxwidth=760&fidelity=grand" id="linkedinImg" onclick="linkedinButton()">
+      <img src="https://i.imgur.com/q4EQ4Me_d.webp?maxwidth=760&fidelity=grand" id="gitHubImg" onclick="gitHubButton()">
+      <h1 id="footerName">WEATHER</h1>
+      <p id="copyrightFooter">@2022 WeatherApp, M.O. All Rights Reserved.</p>
+    </div>
+    <div id="overlay"></div>
+  </body>
+
+
+  
+</html>
